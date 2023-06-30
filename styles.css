@@ -6,6 +6,10 @@
 body,html{
     font-family: 'Roboto Slab', serif;
 }
+img:hover{
+transform: scale(1.05);
+transition: ease-in-out;
+}
 .nav1{
     width: 100%;
     flex-grow: none; 
@@ -20,7 +24,9 @@ justify-content: space-between;
 /* position: fixed;
 z-index: 1; */
 }
-
+#head{
+    margin-right: 25%;
+}
 main{
     width: 100%;
 }
@@ -50,9 +56,13 @@ section{
 .about_cont img{
     border-radius: 50%;
     margin-left: 50px;
+    margin-top: 50px;
     border-image:2px  grey;
     width: 350px;
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about_cont h1{
     display: flex;
@@ -64,6 +74,21 @@ section{
     font-weight: 400;
     font-size: 1.5rem;
 }
+a:hover
+{
+   transform: scale(1.05);
+text-decoration:underline;
+text-shadow: 2px solid yellow; 
+transition:ease-out; 
+
+}
+i:hover{
+    transform: scale(1.09);
+    color: red;
+}
+span:hover{
+    transform: scale3d(1.05,1.02,1.02);
+}
 span{
     display: flex;
     justify-content:left;
@@ -72,6 +97,7 @@ span{
    font-size: 2.7rem;
    font-family: 'Roboto', sans-serif;
 }
+
 #objective{
     background-image: url("obj.jpg");
     height: 90vh;
@@ -229,7 +255,7 @@ hr{
 }
 #contact{
     background-image: url("contact.jpg");
-       height: 100vh;
+       height: 80vh;
        background-repeat: no-repeat;
        background-size: cover;
        /* display: flex;
@@ -244,7 +270,6 @@ hr{
     text-align: left;
 }
 .contact_cont h2{
-    p
     font-size: 2.5rem;
     color: white;
 }
@@ -266,7 +291,7 @@ footer{
 
 @media (max-width:900px) {
     .about_cont{
-        
+        /* padding-top:20px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -282,11 +307,12 @@ footer{
         height: 250px;
     }
     .about_cont h1{
+        padding: 10px;
         display: flex;
         justify-content:center;
         align-items:center;
                       font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     span{
         display: flex;
